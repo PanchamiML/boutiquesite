@@ -59,10 +59,21 @@ ul li::before{
     background-size: cover;
    margin-left: -25px;
 }
-/*ul li .checked{
+ul li .checked{
     color: azure;
     text-decoration: line-through;
-}*/
+}
 ul li.checked::before{
     background-image: url(../../Pictures/tickbullet.webp);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    font-size: 30px;
+    text-align: centre;
+}
+ul li span:hover{
+    
 }

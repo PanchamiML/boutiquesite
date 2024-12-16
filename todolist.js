@@ -9,6 +9,19 @@ function addTask(){
         let li = document.createElement("li");
         li.innerHTML = ipsearch.value;
         listadder.appendChild(li);
+        let span = document.createElement("span");
+        span.innerHTML = "\u00d7";
+        li.appendChild(span);
     }
-    ipsearch.value = "";
+    ipsearch.value = " ";
 }
+listadder.addEventListener("click",function(e){
+    if(e.target.tagName === "li"){
+        e.target.classList.toggle("checked");
+
+    }
+    else if(e.target.tagName === "span"){
+        e.target.parentelement.remove();
+    }
+    
+});
