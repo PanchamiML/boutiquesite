@@ -14,10 +14,11 @@
             
             </div>
             <div class="searchbar">
-                <input type="text" placeholder="note here" style="max-width: 800px; min-height:40px ; border-radius: 20px; border: none; background-color: rgb(173, 171, 175); text-align: center;"><span><button style="height: 40px; width: 50px; border-radius: 20px; border: none; background-color: rgb(160, 80, 234); cursor: pointer;" >Add</button></span>
+                <input type="text" id="searchbar" placeholder="note here" style="max-width: 800px; min-height:40px ; border-radius: 20px; border: none; background-color: rgb(173, 171, 175); text-align: center;"><span>
+                    <button onclick="addTask()" style="height: 40px; width: 50px; border-radius: 20px; border: none; background-color: rgb(160, 80, 234); cursor: pointer;" >Add</button></span>
             </div>
             <div class="listadder">
-                <ul>
+                <ul id="listcontainer">
                    <!-- <li class="checked">task1</li>
                     <li>task1</li>
                     <li>task1</li>-->
@@ -27,5 +28,6 @@
             </div>
 
         </div>
+        <script src="todolist.js"></script>
     </body>
 </html>

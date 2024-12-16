@@ -59,10 +59,10 @@ ul li::before{
     background-size: cover;
    margin-left: -25px;
 }
-ul li .checked{
+/*ul li .checked{
     color: azure;
     text-decoration: line-through;
-}
+}*/
 ul li.checked::before{
     background-image: url(../../Pictures/tickbullet.webp);
 }
